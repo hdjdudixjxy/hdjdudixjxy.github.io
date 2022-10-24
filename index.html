@@ -1,0 +1,262 @@
+<!-------------- ETIQUETAS DE HTML -----------------
+
+_<!DOCTYPE html>                                Esto le dice al archivo que se está utilizando la última version de html y es necesario colocarlo siempre
+_<html>                                         En esta etiqueta va todo
+_<link>                                         Sirve para especificar la reclación entre el domuneto actual y algo externo
+
+############## PARTES PRINCIPALES ####################
+
+_<head>                                         Va todo lo que no se ve en la ventana
+_<body>                                         Cuerpo de la página
+
+############# CONTENIDO DE HEAD ################
+
+_<title>                                        Este comando sirve para agregarle un título a la pag web, en la parte de la pestaña
+_<meta>                                         Se usa sus atributos para dar mayor información de la página web creada
+
+############# CONTENIDO DE BODY ################
+
+_<header>                                       Etiqueta para encabezados 
+_<section>                                      Etiqueta donde se coloca el contenido principal del body
+_<aside>                                        Etiqueta que se encuentra a la derecha de section
+_<footer>                                       Etiqueta donde va el pié de página
+#######################################################
+    _<article>                                  Etiqueta para elaborar artículos
+    _<hgroup>                                   Etiqueta que agrupa los h
+        _<h>                                    Etiqueta para títulos o subtítulos, existen 6 tipos predeterminados con las abreviaturas h1,h2,h3,h4,h5,h6
+    _<time>                                     Etiqueta para denotar fechas
+    _<p>                                        Etiqueta parrafo
+        _<hr>                                   Genera una línea que separa parrafos
+        _<b>                                    Pone en negrita su contenido
+        _<i>                                    Pone en cursiva su contenido
+        _<u>                                    Subraya su contenido
+        _<strike>                               Tacha su contenido horizontalmente a la mitad de su altura
+        _<abbr>                                 Especifica siglas de algun acrónimo
+        _<small>                                Etiqueta que agrega letra pequeña
+        _<sub>                                  Etiqueta para convertir a subíndice
+        _<sup>                                  Etiqueta para convertir a superíndice
+        _<samp>                                 Muestra mensajes que diría el ordenador
+    _<address>                                  Etiqueta que muestra información de contacto, normalmente va en el footer y dentro van <a>
+    _<a>                                        Etiqueta que crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página o direcciones de correo
+    _<nav>                                      Etiqueta de navegación, donde normalmente se usa hipervínculos y crea textos con guiones
+        _<ul>                                   Genera listas ordenadas por viñetas
+            _<li>                               Con el se especifica el contenido que acompaña a cada viñeta
+            _<li> 
+        _<ol>                                   Genera listas ordenadas por números
+            _<li>                               Con el se especifica el contenido que acompaña a cada viñeta
+            _<li> 
+    _<div>                                      Etiqueta para hacer divisiones y para poder agregar texto sin que sea un título, parrafo u otra etiqueta
+    _<details>                                  Etiqueta para colocar texto que se puede comprimir donde solo se ve el summary
+        _<summary>                              Etiqueta para colocar resúmenes, suele usarse dentro de details pero también fuera
+    _<img>                                      Etiqueta para agregar imagen, con su atributo src(source) o imagen desde un URL
+    _<br>                                       Completa el espacio faltante hacia la derecha para ubicar al siguiente debajo
+    _<audio>                                    Esta etiqueta define audios
+    _<video>                                    Esta etiqueta define videos, controls es necesario para interactuar con el contenido
+    _<form>                                     Etiqueta para formularios
+        _<fieldset>                             Organiza en grupos los campos de un formulario
+            _<legend>                           Encabezado del fieldset
+                _<input>
+                _<input>
+        _<input>                                Etiqueta para crear controles interactivos con el fin de recibir datos del usuario
+    _<cite>                                     Cita en línea, se usa normalmente para referenciar autores
+    _<dl>                                       Etiqueta para hacer una lista de descripciones
+        _<dt>                                   Titulo de la descripción
+        _<dd>                                   Descripción
+    _<table>                                    Etiqueta para tablas
+        _<tr>                                   Filas
+        _<td>                                   Columnas
+    _<blockquote>                               Cita en bloque
+    _<q>                                        Citado de texto en línea, coloca comillas
+    _<select>                                   Etiqueta para menú de opciones despegable
+        _<optgroup>                             Agrupador de options
+            _<option>                           Opciones que se desplegan
+    _<textarea>                                 Etiqueta para colocar texto cualquiera pero desde la ventana, si a la propiedad resize se le da none no se puede agrandar
+-->
+
+<!DOCTYPE html> 
+
+<html lang="es">
+
+<link rel="stylesheet" type="text/css" href="estilos.css"> <!--Con esto referenciamos el archivo CSS-->
+    
+    <head> 
+
+        <title>Pagina</title> 
+        <meta charset="utf-8"> <!--cambia la codificación de los caracteres, utf-8 permite colocar acentos en nuestro texto-->
+        <!--<meta name="copyright" content="nombre de la empresa"> sirve para evitar copyright--> 
+        <meta name="Description" content="sitio web" />
+        <meta name="Author" content="Cristhian" />
+        <meta name="keywords" content="palabras que sirven para encontrar más rápido esta pag con el buscador" />
+        <meta name="robots" content="noindex"> <!--Aquí se puede usar index y noindex que sirven para que se muestre cuando se busca en el buscador web o no respectivamente-->
+        <meta http-equiv="refresh" content="100"> <!--Lo que hace esto es actuaizar la página cada cierto tiempo-->
+        <link rel="icon" href="icono.ico"> <!--Con esto podemos ponerle un icono a nuestra página-->
+
+    </head>
+
+    <body style="background:rgb(83, 207, 205)">
+        
+        <p>Lorem, ipsum dolor <b>sit amet consectetur</b> adipisicing elit. <i>Blanditiis</i>, ad fugiat molestiae est nam fugit labore saepe, voluptates obcaecati deleniti, id placeat consectetur magni consequuntur accusantium. Fugit, error laborum?</p>
+        <hr/>
+        <strike>letra tachada</strike>
+        <br>
+        <p id="referencia">blabla<abbr title="Hypertext Markup Language">HTML</abbr>blablablabla</p>
+        <header>Título  
+            <nav style="background:rgb(6, 102, 102)" class="menu">
+                <ul>
+                    <li>Principal</li> 
+                    <li>Secundario</li>
+                    <li><a href="https://google.com">Otro</a></li>
+                </ul>
+                <ol>
+                    <li>Texto1</li>
+                    <li>Texto2</li>
+                    <li>Texto3</li>
+                    <li>Texto4</li>
+                </ol>
+            </nav>
+        </header>
+        <div>
+            <details>
+                <summary>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quaerat modi omnis? Repellat ab aspernatur rerum alias 
+                    nulla aliquam quidem tenetur voluptates. Nisi earum, itaque minima at odit culpa omnis.</summary>
+                <p>Todo está dentro de details</p>
+            </details>
+            <summary>Lorem</summary>
+        </div>
+        <section> 
+            <parrafo>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dicta, voluptatibus consectetur exercitationem quas quaerat nemo 
+                officiis! Itaque, a aspernatur rerum sed dolorem omnis nobis laborum obcaecati vero temporibus. Fuga.</parrafo>
+            <article>
+                <time datetime="26-09-2022" id="tete">Publicado el 26-09-2022</time>
+                <hgroup>
+                    <h1>Subtitulo 1</h1>
+                    <h2>Encabezado 1</h2>
+                </hgroup>
+                <p>Lorem ipsum dolor <small>sit amet consectetur adipisicing elit. Odio sapiente reiciendis</small> velit at maiores et modi cum 
+                    illo maxime beatae! Ab adipisci quis consequuntur ullam, consequatur ipsam explicabo nisi nostrum</p>
+                <img src="../UNT.png" alt="imagen" title="titulo por defecto al poner el cursor en la imagen" style="width:110px ;height:100px"/>
+                <!--El atributo alt sirve para especificar un texto para la imagen-->
+                <br>
+                <video src="videoplayback.mp4" controls></video>
+                <br>
+                <audio src="videoplayback.mp4" controls></audio>
+            </article>
+            <form>
+                <input type="text" name="texto" value="texto por defecto"> <!--name es el nombre que se le da a la entrada, y sirve para luego referenciarlo con js-->
+                <input type="password" name="contra">
+                <input type="checkbox" name="">
+                <input type="color" name="colooor">
+                <input type="button" name="botooon" value="nombre del boton">
+                <input type="date" name="">
+                <input type="datetime-local" name="">
+                <input type="email" name="" required=""> <!--Required sirve para que llenar un campo sea obligatorio-->
+                <input type="file" name="">
+                <input type="hidden" name=""><br>
+                <textarea readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit</textarea><br> <!--Readonly hace que no se pueda escribir en él, solo leer-->
+                <input type="image" name="">
+                <input type="month" name="">
+                <input type="number" name="">
+                <input type="radio" name="">
+                <input type="range" name="" min="2" max="7">
+                <input type="reset" name="">
+                <input type="search" name="">
+                <input type="submit" name="">
+                <input type="tel" name="">
+                <input type="url" name="">
+                <input type="week" name="">
+            </form>
+            <article>
+                <p>... entonces H<sub>2</sub>O aparecer<sup>a</sup> una ventana con el mensaje: <samp>Hola mundo</samp>
+                </p> 
+                <hgroup>
+                    <h1>Subtitulo 2</h1>
+                    <h2>Encabezado 2</h2> 
+                </hgroup>
+                <p>Lorem ipsum dolor sit amet consectetur <cite>Roberto</cite> illum eaque dicta vitae omnis</p>
+                <address>
+                    <a href="http://youtube.com" target="_blank" class="clase">youtube</a>
+                    <!--target="_blank" es un atributo que permite abrir enlaces, pero no en la pestaña actual, sino en otra-->
+                </address>
+                <img src="https://images.ctfassets.net/x7j9qwvpvr5s/2hBkXHWVfeEWUqO26kwS2C/af4a93a83a2d04166c279c3a03cfcce0/Supersport-MY19-GREY-01-Carousel-ImgText-655x410.jpg" style="width:200px ;height:140px"/>
+            </article>
+        </section>
+        <div>
+            <dl>
+                <dt>Término1</dt>
+                <dd>Descripción</dd>
+                <dt>Término2</dt>
+                <dd>Descripción</dd>
+            </dl>
+            <form>
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    Nombre: <input name='nombre' type='text' tabindex='1'>
+                    Apellidos: <input name='apellidos' type='text' tabindex='2'>
+                </fieldset>
+                <fieldset>
+                    <legend>edad</legend>
+                    <input type='checkbox' tabindex='20'
+                           name='edad' value='20-39' > 20-39
+                    <input type='checkbox' tabindex='21'
+                           name='edad' value='40-59' > 40-59
+                    <input type='checkbox' tabindex='22'
+                           name='edad' value='60-79' > 60-79
+                </fieldset>
+            </form>
+        </div>
+        <section>
+            <table border="1px">
+                <tr> 
+                    <td><b>nombre</b></td>
+                    <td><b>apellido</b></td>
+                    <td><b>valor</b></td>
+                    <td><b>escuela</b></td>
+                </tr>
+                <tr>
+                    <td>edad</td>
+                    <td>abdc</td>
+                    <td>sdasd</td>
+                    <td>Lorem, ipsum dolor.</td>
+                </tr>
+            </table>
+            <a href="#referencia">ir a referencia</a> <!-- el atributo href también nos sirve para hacer referencias a partes de nuestra misma página-->
+        </section>
+
+        <aside>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo saepe inventore nisi laboriosam ducimus iusto debitis 
+                neque architecto assumenda<br>est sapiente itaque<br>consectetur velit dolores, natus magni voluptatibus totam quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus autem et perferendis est quidem quisquam eligendi quas. Laudantium ab, nostrum non tenetur praesentium, facere beatae, sequi perferendis sed iste soluta velit! Ullam iure fugit dolorum provident, animi inventore alias dolor distinctio quos libero temporibus deleniti facilis corporis eligendi! Animi nostrum suscipit perspiciatis, soluta cum officia laudantium atque aspernatur laboriosam possimus nulla facilis cupiditate blanditiis officiis non inventore! Accusamus ratione libero eius! Tempore esse nam odit suscipit. Fugiat, unde aspernatur animi repudiandae quis esse quidem alias voluptas doloremque consectetur adipisci sunt at in deleniti culpa. Odio laborum fugit omnis quae consectetur ipsam sint iusto beatae harum corporis blanditiis distinctio pariatur alias voluptatum ipsa, ex quaerat eligendi dolorem autem tempora laboriosam consequatur obcaecati dolore ad! Excepturi in porro exercitationem ut cupiditate rerum. Beatae incidunt tempore doloremque, eveniet vero veritatis perspiciatis maxime cupiditate hic exercitationem blanditiis, unde quibusdam reiciendis et, dignissimos distinctio molestiae.</p>
+            <blockquote cite="http://google.com">
+
+                dsfewufdsafbewgrug asbdgqjkexs
+            
+            </blockquote>
+            
+            <blockquote cite="http://yahoo.com"> sdqaaaadfdssfewufdsafbewgrug asbdgqjkexsgdfgf</blockquote>
+            
+            <blockquote cite="http://google.com">sdqwdsa dafbewgrug abdgqsxsgsdfgf</blockquote>
+            <p>Entonces ella dijo: <q cite="Alejandra">corrais todos los que quieren ser libres.</q></p>
+        
+        </aside>
+    
+        <footer class="clase">
+
+            <select name="mascotas" class="despegable">
+                <optgroup label="4 patas">
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                </optgroup>
+                
+                <optgroup label="2 patas">
+                    <option value="loro">Loro</option>
+                    <option value="aguila">Aguila</option>
+                </optgroup>
+            </select>
+            <p id="textoFinal">Pie de página</p>
+        </footer>
+    
+    </body>
+
+</html>
+
+<!--HTML es para darle al navegador información de texto, este se complementa con CSS el cual le da todo el diseño y javascript la funcionalidad-->
