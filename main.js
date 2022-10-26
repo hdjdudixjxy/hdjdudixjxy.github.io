@@ -1,0 +1,1 @@
+console.log("Por si quieren usar JavaScript")
